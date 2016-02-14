@@ -6,9 +6,11 @@ import os
 users = ['9171234567']
 app = Flask(__name__)
 
-f = open("env_var.txt", "r")
-app.secret_key = f.readline()
-f.close()
+#f = open("env_var.txt", "r")
+app.secret_key = 'VVVegetarian420greypuppies024070594' 
+#f.close()
+
+#print os.environ
 
 login_manager = flask_login.LoginManager()
 login_manager.init_app(app)
