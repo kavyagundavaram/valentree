@@ -155,3 +155,160 @@ p {
   color: #AB0028;
   font-family: 'Lobster Two', cursive;
 }
+
+
+
+
+@media (min-width: 900px) {
+    
+          body {
+          background: rgba(0, 0, 0, 0.1);;
+          padding: 150px;
+        }
+
+
+        /* OG envelope */
+        .envelope {
+          position: relative;
+          margin: 20em auto 0;
+          width: 588px;
+          height: 396px;
+          background: #c94548;
+          border-radius: 0 0 30px 30px;
+          box-shadow: 0 0 6px #c94548 inset;
+          
+        /*   margin-left: 100%; */
+        }
+
+        /* entire envelope */
+        .envelope:before,
+        .envelope:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border: 0 solid transparent;
+          border-width: 198px 294px;
+        }
+
+        /* envelope top*/
+        .envelope:before {
+          border-bottom-color: #c94548;
+          top: -100%;
+          left: 0px;
+        }
+
+         /* envelope outer*/
+        .envelope:after {
+          border-right-color: #ed4c50;
+          border-left-color: #fa565a;
+          border-bottom-color: #fa565a;
+          top: 0;
+          border-radius: 0 0 15px 15px;
+          transform: rotate(360deg);
+          box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+        }
+               /* white paper */
+              .paper {
+                background: #fff;
+                width: 522px;
+                height: 396px;
+                margin:  auto;
+                border-radius: 30px;
+                position: absolute;
+                left: 36px;
+                /* tucked in 
+                top: -0px; */
+                /*top: -99px;*/
+                top: -99px;
+                box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+                transition: all 0.1s ease-in-out;
+                bottom: 30em;
+                padding-bottom: 18em;
+              }
+
+          
+              
+
+
+
+
+        /* paper outside the envelope */
+        #outside {
+         
+          background: #fff;
+          width: 522px;
+          height: 600px;
+          margin:  auto;
+          border-radius: 30px;
+          position: absolute;
+          left: 36px;
+          /* tucked in 
+          top: -0px; */
+          /*top: -99px;*/
+          top: -99px;
+          box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+          margin-top: 200px;
+          margin-left: 150px;
+          
+        }
+
+        /* closed envelope */
+        #closed {
+          background: #F95B5F;
+          border-radius: 15px 15px 15px 15px;
+          
+
+          
+          
+        }
+
+        /* top */
+        #closed:before {
+
+        opacity: 0.0;
+        border-radius: 0px 0px 15px 15px;
+          
+        }
+
+
+        /* outer */
+        #closed:after {
+          border-right-color: #ed4c50;
+          border-left-color: #fa565a;
+          border-bottom-color: #fa565a;
+          top: 0;
+          border-radius: 15px 15px 15px 15px;
+          transform: rotate(360deg);
+          box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+        }
+
+
+        p {
+          font-size: 18px;
+          content: '';
+          position: absolute;
+          left: 36px;
+          right: 36px;
+          text-align: center;
+          color: #868686;
+          height: 12px;
+          border-radius: 15px;
+          font-family: 'SourceCodeProLight';
+          line-height: 1.5;
+        }
+
+        .name {
+          
+          text-align: center;
+          color: #AB0028;
+          font-family: 'Lobster Two', cursive;
+        }
+
+
+        .container {
+        }
+
+         
+  
+  }
