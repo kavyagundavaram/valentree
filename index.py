@@ -3,9 +3,11 @@ import flask.ext.login as flask_login
 import flask
 import os
 import csv
+import pprint
 
 users = {}
 app = Flask(__name__)
+phoneNum = None;
 
 #f = open("env_var.txt", "r")
 app.secret_key = 'VVVegetarian420greypuppies024070594' 
@@ -89,5 +91,6 @@ def protected():
 
 if __name__ == '__main__':
     parse()
+    pprint.pprint(users)
     app.debug = True
     app.run()
