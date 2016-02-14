@@ -83,7 +83,7 @@ def logout():
 @app.route('/protected')
 @flask_login.login_required
 def protected():
-    return render_template('protected.html')
+    return render_template('protected.html') # users go here
 
 if __name__ == '__main__':
     parse()
