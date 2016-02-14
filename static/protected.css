@@ -22,7 +22,7 @@ button {
 /* OG envelope */
 .envelope {
   position: relative;
-  margin: 21em auto 0;
+  margin: 23em auto 0;
   width: 294px;
   height: 198px;
   background: #c94548;
@@ -68,14 +68,11 @@ button {
         border-radius: 15px;
         position: absolute;
         left: 18px;
-        /* tucked in 
-        top: -0px; */
-        /*top: -99px;*/
         top: -99px;
         box-shadow: 0 1px 1px rgba(0,0,0,0.25);
         transition: all 0.1s ease-in-out;
-        bottom: 15em;
-        padding-bottom: 9em;
+        bottom: 17em;
+        padding-bottom: 11em;
       }
 
   
@@ -163,9 +160,10 @@ p {
     
           body {
           background: rgba(0, 0, 0, 0.1);;
-          padding: 150px;
         }
 
+        button {
+        }
 
         /* OG envelope */
         .envelope {
@@ -220,7 +218,7 @@ p {
                 /* tucked in 
                 top: -0px; */
                 /*top: -99px;*/
-                top: -99px;
+                top: 250px;
                 box-shadow: 0 6px 6px rgba(0,0,0,0.25);
                 transition: all 0.1s ease-in-out;
                 bottom: 30em;
