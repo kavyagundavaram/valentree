@@ -6,8 +6,9 @@ import os
 users = {'foo@bar.tld': {'pw': 'secret'}}
 app = Flask(__name__)
 
-
-# app.secret_key =
+f = open("env_var.txt", "r")
+app.secret_key = f.readline()
+f.close()
 
 login_manager = flask_login.LoginManager()
 login_manager.init_app(app)
