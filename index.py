@@ -7,7 +7,6 @@ import pprint
 
 users = {}
 app = Flask(__name__)
-phoneNum = None;
 
 #f = open("env_var.txt", "r")
 app.secret_key = 'VVVegetarian420greypuppies024070594' 
@@ -74,7 +73,7 @@ def login():
         user = User()
         user.id = phoneNum
         flask_login.login_user(user)
-        return flask.redirect(flask.url_for('protected'))
+        return flask.redirect(flask.url_for('protected', users[phoneNum]))
     
     flash('Please use the number you entered in the TypeForm')
     return flask.redirect(flask.url_for('login'))
@@ -86,8 +85,8 @@ def logout():
 
 @app.route('/protected')
 @flask_login.login_required
-def protected():
-    return render_template('protected.html') # users go here
+def protected(user):
+    return render_template('protected.html', users=user) # users go here
 
 if __name__ == '__main__':
     parse()
