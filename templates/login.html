@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
-<html>
-  <head>
-  </head>
-
-  <body>
-    <form action='login' method='POST'>
-        <input type='text' name='email' id='email' placeholder='email'></input>
-        <input type='password' name='pw' id='pw' placeholder='password'></input>
-        <input type='submit' name='submit'></input>
-    </form>
-  </body>
-</html>
+<title>ValenTree - Login</title>
+<meta name="viewport" content="width=device-width"/>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='login.css') }}"/>
+<form action='login' method='POST'>
+  <input type='text' name='email' id='email' placeholder='email'></input>
+  <br>
+  <input type='password' name='pw' id='pw' placeholder='password'></input>
+  <br>
+  <input id="submit" type='submit' name='submit'></input>
+  <br>
+</form>

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: SourceCodeProLight;
+  src: url(SourceCodePro-Light.otf);
+}
+
+* {
+  font-family: SourceCodeProLight;
+}
+
+form {
+  margin: 2em auto;
+  width: 500px;
+}
+
+input {
+  margin: 0 auto;
+  width: 500px;
+  height: 70px;
+  font-size: 18px;
+}
+
+input[type=text], input[type=password] {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: dashed;
+  border-color: rgb(204, 204, 204);
+  color: rgb(204, 204, 204);
+  padding: 1px;
+}
+
+input[type=submit] {
+  color: rgb(255, 255, 255);
+}
+
+input[type=text], input[type=password], input[type=submit] {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+input[type=submit] {
+  border: none;
+  /* background-color */
+}
+
+button {
+  width: 500px;
+  border-style: none;
+}
+
+@media only screen and (max-width: 480px) {
+  form {
+    width: 250px;
+  }
+
+  input {
+    width: 250px;
+    height: 40px;
+  }
+}
