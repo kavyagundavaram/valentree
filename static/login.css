@@ -15,12 +15,39 @@
   font-family: SourceCodeProLight;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: 'Lobster Two';
   margin: 2em auto 0;
   text-align: center;
-  font-size: 58px;
+  font-size: 64px;
   color: #c94548;
+}
+
+.flashes {
+  color: white;
+  background-color: #c94548;
+  text-align: center;
+  top: 0;
+}
+
+p {
+  text-align: center;
+}
+
+p.desc {
+  margin: 1em;
+}
+
+p.message {
+  margin: 0;
+  top: 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  padding: 0.5em;
 }
 
 form {
@@ -83,6 +110,6 @@ button {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
 }

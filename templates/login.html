@@ -2,11 +2,20 @@
 <title>ValenTree - Login</title>
 <meta name="viewport" content="width=device-width"/>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='login.css') }}"/>
+<div class="flashes">
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <p class="message">{{ message }}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+</div>
 <h1>ValenTree!</h1>
+<p class="desc">If you entered your details in our TypeForm, <br>enter your phone
+number below to find your match!</p>
 <form action='login' method='POST'>
-  <input type='text' name='phoneNum' id='email' placeholder='phone number'></input>
-  <br>
-  <input type='password' name='pw' id='pw' placeholder='password'></input>
+  <input type='text' name='phoneNum' id='phoneNum' placeholder='phone number'></input>
   <br>
   <input id="submit" type='submit' name='submit'></input>
   <br>

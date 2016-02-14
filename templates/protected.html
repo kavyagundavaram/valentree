@@ -1,0 +1,36 @@
+<!Doctype Html>
+<!-- valentree-->
+<link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet'
+    type='text/css'/>
+<link href="{{ url_for('static', filename='protected.css')}}" rel='stylesheet'
+    type='text/css'/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+  $(document).ready(function() {
+    $("#open").hide(); 
+    $("#closed").click(function() {
+      console.log("hfj");
+      $("#closed").hide();
+      $("#open").show();
+    })
+  });
+</script>
+  <!-- envelope with paper inside -->
+<div class="envelope" id="open">
+  <div class="paper" id="showPaper">
+    <h1 class="name"> Your match! <h1>
+        <p>You got matched with \<name\>! You and \<name\> both like interest1, interest2, interest3, and interest4, and you're both leaving <\date and time and airport\>. You should text <\name\> at <\number\></p>
+  </div>
+</div>
+
+<!-- paper by itself>
+<div class="paper" id="outside">
+<h1 class="name"> Jesse <h1>
+<p> This is who we matched you with! You should get lunch with Varun. <p>
+</div-->
+
+<!-- envelope by itself -->
+<div class="envelope" id="closed"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="../static/protected.js">
