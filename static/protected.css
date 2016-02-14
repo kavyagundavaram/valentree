@@ -22,7 +22,7 @@ button {
 /* OG envelope */
 .envelope {
   position: relative;
-  margin: 23em auto 0;
+  margin: 23em auto 3em;
   width: 294px;
   height: 198px;
   background: #c94548;
@@ -168,7 +168,7 @@ p {
         /* OG envelope */
         .envelope {
           position: relative;
-          margin: 20em auto 0;
+          margin: 20em auto 3em;
           width: 588px;
           height: 396px;
           background: #c94548;
@@ -221,7 +221,7 @@ p {
                 top: 250px;
                 box-shadow: 0 6px 6px rgba(0,0,0,0.25);
                 transition: all 0.1s ease-in-out;
-                bottom: 30em;
+                bottom: 34em;
                 padding-bottom: 18em;
               }
 
