@@ -56,7 +56,10 @@ def login():
     flash('Please use the number you entered in the TypeForm')
     return flask.redirect(flask.url_for('login'))
 
-
+@app.route("/logout")
+def logout():
+    flask_login.logout_user()
+    return flask.redirect(flask.url_for('login'))
 
 @app.route('/protected')
 @flask_login.login_required

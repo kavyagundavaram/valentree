@@ -5,14 +5,24 @@
 
 body {
   background: rgba(0, 0, 0, 0.1);;
-  padding: 150px;
+  margin: 0;
 }
 
+button {
+  border: none;
+  background-color: white;
+  color: #ed4c50;
+  width: 150px;
+  height: 30px;
+  font-family: SourceCodeProLight;
+  margin-top: 1em;
+  font-size: 13px;
+}
 
 /* OG envelope */
 .envelope {
   position: relative;
-  margin: 10em auto 0;
+  margin: 21em auto 0;
   width: 294px;
   height: 198px;
   background: #c94548;

@@ -15,13 +15,18 @@
     })
   });
 </script>
-  <!-- envelope with paper inside -->
-<div class="envelope" id="open">
-  <div class="paper" id="showPaper">
-    <h1 class="name"> Your match! <h1>
-        <p>You got matched with \<name\>! You and \<name\> both like interest1, interest2, interest3, and interest4, and you're both leaving <\date and time and airport\>. You should text <\name\> at <\number\></p>
+
+<a href="{{ url_for('logout')}}">
+  <button class="logout">Logout</button>
+</a>
+
+<!-- envelope with paper inside -->
+  <div class="envelope" id="open">
+    <div class="paper" id="showPaper">
+      <h1 class="name"> Your match! <h1>
+          <p>You got matched with <\name\>! You and <\name\> both like interest1, interest2, interest3, and interest4, and you're both leaving <\date and time and airport\>. You should text <\name\> at <\number\></p>
+    </div>
   </div>
-</div>
 
 <!-- paper by itself>
 <div class="paper" id="outside">
@@ -30,7 +35,7 @@
 </div-->
 
 <!-- envelope by itself -->
-<div class="envelope" id="closed"></div>
+  <div class="envelope" id="closed"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="../static/protected.js">
