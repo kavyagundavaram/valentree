@@ -20,5 +20,4 @@ Cursive font taken from typeform
 font-family: 'Lobster Two', Regular;
 https://fonts.googleapis.com/css?family=Lobster+Two
 
-Survey Info
-https://docs.google.com/spreadsheets/d/1teZcgOfGis8Z1FvNmTt6Dfil4Lg6lnXRfnboY_Pynjg/edit?usp=sharing
+
